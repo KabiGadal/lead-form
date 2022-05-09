@@ -1,0 +1,155 @@
+#outer{
+    display: none;
+}
+.evnt_default_name{
+    display: none;
+}
+#event{
+    position: fixed;
+    display: flex;
+    border: 1px solid black;
+    width: 100%;
+    height: 102px;
+    padding-top: 4px;
+    margin: 0px;
+    color: white;
+    background: rgb(36, 33, 33);
+    border-radius: 5px;
+  
+}
+.salesforce_logo{
+    margin-left: 16%;
+}
+.event_name{
+    margin-left: 10%;
+    margin-top: 2.6%;
+    width: 45%;
+}
+
+#master_div{
+    display: flex;
+    /* gap: 5%; */
+    margin-left: 3%;
+    /* border: 1px solid black; */
+}
+
+/* #image{
+    border: 1px solid black;
+    width: 80%;
+    height: 532px;
+} */
+.img_out{
+    padding-left: 12%;
+}
+.outer_div{
+    height: 1%;
+    margin-top: 8.5%;
+    width: 48%;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+}
+
+.first{
+    margin-left: 0%;
+    color: rgb(129, 123, 123);
+}
+
+#sub{
+    margin-left: -25%;
+    margin-top: 8%;
+    width: 50%;
+}
+.form_outer_div{
+    height: 1%;
+    padding: 2%;
+    display: flex;
+    width: 45%;
+    box-shadow: 3px 3px 5px rgb(133, 134, 118), -3px -3px 5px rgb(133, 134, 118);
+    border-radius: 9px;
+    background-color: white;
+}
+.inner_div{
+    margin-left: 12px;
+    width: 365px;
+    background-color: white;
+}
+
+.desc{
+    height: 21px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Slideshow */
+
+/* .header h1 {
+    color: white;
+    text-align: center;
+  }
+  #slider {
+    width: 720px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 20px auto;
+  }
+  /*the sildeer div has a defined width and height which acts as a screen inside another screen*/
+  
+  /*#slider .slides {
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+  }
+  /*the list inside has a greater width and height to cover all the slideX with a display block type*/
+  
+  /*#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 720px;
+    height: 400px;
+    text-align: center;
+    font-size: 30px;
+    color: lightblue;
+  }
+  
+  #slider .slide p{
+    position: relative;
+    top: 170px;
+  }
+  
+  
+  
+  /*Each slid has the same width as that of the slider hence covering the whole span*/
+  
+  /*.slide1 {
+    background: #9e6ce4	;
+  }
+  
+  .slide2 {
+    background: #6c56aa;
+  }
+  
+  .slide3 {
+    background: #483490;
+  }
+  
+  .slide4 {
+    background: #082766;
+  }
+  
+  .slide5 {
+    background: #0d4950;
+  } */

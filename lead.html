@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="public/companyLogo.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="index.js"></script>
+    <title>OmniCloud Event</title>
+</head>
+<style>
+    body{
+        background-image:linear-gradient(#00ffff,#cc99ff) ;
+        /* #ffffff,#66ffff */
+    }
+</style>
+<body>
+    <!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: Please add the following <FORM> element to your page.             -->
+    <!--  ----------------------------------------------------------------------  -->
+    
+    <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+    
+    <input type=hidden name="oid" value="00D0T0000008lSE">
+    <input type=hidden name="retURL" value="https://registration-successful-page-nv6ch1vh8-gadalkabi-gmailcom.vercel.app/">
+   
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+    <!--  these lines if you wish to test in debug mode.                          -->
+    <!--  <input type="hidden" name="debug" value=1>                              -->
+    <!--  <input type="hidden" name="debugEmail"                                  -->
+    <!--  value="visbhale@omnicloudconsulting.com">                               -->
+    <!--  ----------------------------------------------------------------------  -->
+    
+   
+    
+    <label class="evnt_default_name" for="eventName:"></label>
+    <input class="evnt_default_name" id="00N0T000009dNun" maxlength="255" name="00N0T000009dNun" size="20" type="text" value="Introduction To QTC and Salesforce Industries"/>
+    <div id="event">
+        <img class="comp_logo" src="http://omnicloudconsulting.com/wp-content/uploads/2021/02/omni-cloud-logo-1.png" alt="img"/>
+        <h2 class="event_name">Introduction To QTC & Salesforce Industries</h2>
+        <img class="salesforce_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/2560px-Salesforce.com_logo.svg.png" alt="img"/>
+        
+    </div>
+    <div id="master_div" >
+        <div class="outer_div img_out">
+            <!-- DOB:<span class="dateInput dateOnlyInput"><br>
+                <input  class="field" id="00N0T000009dCIs" name="00N0T000009dCIs" size="12" type="text" /></span><br> -->
+                <div id="demo"></div>
+           <!-- <img id='image' src="https://www.salesforce.com/blog/wp-content/uploads/sites/2/2021/12/2021-12-360Blog-2D-IndividualIllustrations-Codey.png" alt='img'/> -->
+        </div>
+
+        <script>
+
+            let arr=["https://www.salesforce.com/blog/wp-content/uploads/sites/2/2021/12/2021-12-360Blog-2D-IndividualIllustrations-Astro.png",
+                "https://www.salesforce.com/blog/wp-content/uploads/sites/2/2021/12/2021-12-360Blog-2D-IndividualIllustrations-Blaze.png",
+                 "https://www.salesforce.com/blog/wp-content/uploads/sites/2/2021/12/2021-12-360Blog-2D-IndividualIllustrations-Brandy.png",
+                "https://www.salesforce.com/blog/wp-content/uploads/sites/2/2021/12/2021-12-360Blog-2D-IndividualIllustrationsCloudy.png",
+                 "https://www.salesforce.com/blog/wp-content/uploads/sites/2/2021/12/2021-12-360Blog-2D-IndividualIllustrations-Codey.png",
+                 "https://www.salesforce.com/blog/wp-content/uploads/sites/2/2021/12/2021-12-360Blog-2D-IndividualIllustrations-Einstien.png",
+                "https://www.salesforce.com/blog/wp-content/uploads/sites/2/2021/12/2021-12-360Blog-2D-IndividualIllustrations-Koa.png",
+                 "https://www.salesforce.com/blog/wp-content/uploads/sites/2/2021/12/2021-12-360Blog-2D-IndividualIllustrations-Ruth.png"];
+                 
+            const element = document.getElementById("demo");
+            let image = document.createElement('img');
+
+             image.setAttribute('height', '543px');
+            
+            let i = 0;
+            image.src = arr[0];
+            
+            element.append(image);
+            
+            setInterval(function() {
+            if(i == arr.length){
+                i = 0;
+            }
+            image.src = arr[i];
+            i++;
+            }, 3000);
+            </script>
+       
+    <div class="outer_div form_outer_div" class="form-group">
+        <div class="inner_div">
+        <!-- Record Type -->
+        <div id="outer" > 
+        <label class="first" for="recordType">Record Type</label>
+        <select  id="recordType" class="form-control" name="recordType">
+        <option value="">--None--</option>
+        <option value="0120T000000IkgB">Customer</option>
+        <option value="0120T000000IkgG">Employee</option>
+        </select>
+        </div>
+        <!-- Salutation -->
+
+    <!-- <label for="salutation" class="first">Salutation</label>
+    <select  id="salutation"  class="form-control" name="salutation">
+    <option value="">--None--</option>
+    <option value="Mr.">Mr.</option>
+    <option value="Ms.">Ms.</option>
+    <option value="Mrs.">Mrs.</option>
+    <option value="Dr.">Dr.</option>
+    <option value="Prof.">Prof.</option>
+    </select> -->
+    
+    <!-- firstName -->
+    <label for="first_name" class="first"></label>
+    <input  id="first_name"  autocomplete="off" class="form-control" placeholder="First Name" maxlength="40" name="first_name" size="20" type="text" />
+    
+    
+    <!-- DOB:<span class="dateInput dateOnlyInput">
+    <input  id="00N0T000009dCIs" name="00N0T000009dCIs" size="12" type="text" /></span><br> -->
+    
+    <!-- Phone -->
+    <label for="phone" class="first"></label>
+    <input  id="phone" class="form-control"  autocomplete="off" placeholder="Mobile" maxlength="40" name="phone" size="20" type="text" />
+    
+   
+    
+    <!-- Address -->
+    <label  for="address" class="first"></label>
+    <input  id="00N0T000009dO2h" class="form-control" autocomplete="off" placeholder="Address" maxlength="255" name="00N0T000009dO2h" size="20" type="text" />
+    
+    
+    
+    <!-- State -->
+    <label  for="state" class="first"></label>
+    <input  id="00N0T000009dPxe" class="form-control" autocomplete="off" placeholder="State" maxlength="50" name="00N0T000009dPxe" size="20" type="text" />
+
+    <!-- College Name -->
+    <label  for="college_name" class="first"></label>
+    <input  id="00N0T000009dO9Y" class="form-control" autocomplete="off"  placeholder="College Name" maxlength="255" name="00N0T000009dO9Y" size="20" type="text" />
+
+           <!-- Experience Desc -->
+    <label for="experience_description" class="first desc"></label>
+    <textarea  id="00N0T000009dOM3UAM" class="form-control" autocomplete="off" placeholder="Experience Description" name="00N0T000009dOM3UAM" rows="3" type="text" wrap="soft"></textarea>
+
+     <!-- Trailhead link -->
+     <label  for="trailhead_link" class="first"></label>
+     <input  id="00N0T000009dD7q" class="form-control" autocomplete="off" placeholder="Trailhead Link"  maxlength="255" name="00N0T000009dD7q" size="20" type="text" /><br>
+    </div>
+
+    
+    <div class="inner_div">
+    
+    <!-- Last Name -->
+    <label for="last_name" class="first"></label>
+    <input  id="last_name" class="form-control" autocomplete="off" placeholder="Last Name" maxlength="80" name="last_name" size="20" type="text" />
+
+     <!-- Email -->
+     <label for="email" class="first"></label>
+     <input  id="email" class="form-control" autocomplete="off" placeholder="Email" maxlength="80" name="email" size="20" type="text" />
+
+         <!-- City -->
+    <label for="city" class="first"></label>
+    <input  id="city" class="form-control" autocomplete="off" placeholder="City" maxlength="40" name="city" size="20" type="text" />
+
+    <!-- <label for="country" class="first"></label>
+    <input  id="00N0T000009dPxj" class="form-control" placeholder="Country" maxlength="50" name="00N0T000009dPxj" size="20" type="text" /><br> -->
+    
+    <!-- Postal Code -->
+
+    <label  for="postal_code" class="first"></label>
+    <input  id="00N0T000009dPxo" class="form-control" autocomplete="off" name="00N0T000009dPxo" placeholder="Postal Code" size="20" type="text" />
+    
+   <!-- Years of Experience -->
+   <label  for="year&#39;s_of_experience" class="first"></label>
+   <input  id="00N0T000009dOKH" class="form-control" autocomplete="off"  placeholder="Years Of Experience" name="00N0T000009dOKH" size="20" type="text" /><br>
+    
+        <!-- Educational Qualification -->
+        <label for="educational_qualification" class="first">Educational Qualification</label>
+        <select  id="00N0T000009dOTs" class="form-control" name="00N0T000009dOTs" title="Educational Qualification" onchange="changeddl(this)">
+        <option value="-1" selected="">--None--</option>
+        <option value="Bachelor of Arts (B.A)">Bachelor of Arts (B.A)</option>
+        <option value="Bachelor of Architecture ( B.Arch)">Bachelor of Architecture ( B.Arch)</option>
+        <option value="Bachelor of Business Administration ( B.B.A)">Bachelor of Business Administration ( B.B.A)</option>
+        <option value="Bachelor of  Business Management (B.B.M)">Bachelor of  Business Management (B.B.M)</option>
+        <option value="Bachelor of Commerce (B.Com)">Bachelor of Commerce (B.Com)</option>
+        <option value="Bachelor of Technology (B.Tech)">Bachelor of Technology (B.Tech)</option>
+        <option value="Bachelor of Science(B.Sc)">Bachelor of Science(B.Sc)</option>
+        <option value="Bachelor of Engineering(B.E)">Bachelor of Engineering(B.E)</option>
+        <option value="Bachelor of Computer Science(B.C.S)">Bachelor of Computer Science(B.C.S)</option>
+        <option value="Master of Arts(M.A)">Master of Arts(M.A)</option>
+        <option value="Master of Arts in Management(M.A.M)">Master of Arts in Management(M.A.M)</option>
+        <option value="Master of Business Administration(M.B.A)">Master of Business Administration(M.B.A)</option>
+        <option value="Master of Human Resource Management(M.H.R.M)">Master of Human Resource Management(M.H.R.M)</option>
+        <option value="Master of Technology(M.Tech)">Master of Technology(M.Tech)</option>
+        <option value="Master of Computer Application(M.C.A)">Master of Computer Application(M.C.A)</option>
+        <option value="Master of Commerece(M.Com)">Master of Commerece(M.Com)</option>
+        <option value="Master of Sciecne(M.Sc)">Master of Sciecne(M.Sc)</option>
+        <option value="Master of Engineering(M.E)">Master of Engineering(M.E)</option>
+        <option value="Others">Others</option>
+        </select><br>
+        
+
+    <!-- Specialization -->
+
+    <label  for="specialization" class="first">Specialization</label>
+    <select  id="00N0T000009dPxZ" class="form-control iOperation" name="00N0T000009dPxZ" title="Specialization">
+    <option value="">--None--</option><option value="B.A in Education">B.A in Education</option>
+    <option value="B.A in Journalism and Mass Communication">B.A in Journalism and Mass Communication</option>
+    <option value="B.A in Politics">B.A in Politics</option>
+    <option value="B.A in Psychology">B.A in Psychology</option>
+    <option value="B.A in Computer Science">B.A in Computer Science</option>
+    <option value="B.A in English Language">B.A in English Language</option>
+    <option value="B.A in English Literature">B.A in English Literature</option>
+    <option value="B.Arch in Residential">B.Arch in Residential</option>
+    <option value="B.Arch in Commercial">B.Arch in Commercial</option>
+    <option value="B.Arch in Landscaping">B.Arch in Landscaping</option>
+    <option value="B.Arch in Interior Architecture">B.Arch in Interior Architecture</option>
+    <option value="B.Arch in Urban Design">B.Arch in Urban Design</option>
+    <option value="B.Arch in Green Building Design">B.Arch in Green Building Design</option>
+    <option value="B.Arch in Industrial Architecture">B.Arch in Industrial Architecture</option>
+    <option value="BBA in Aviation">BBA in Aviation</option>
+    <option value="BBA in Logistics &amp; Supply Chain Management">BBA in Logistics &amp; Supply Chain Management</option>
+    <option value="BBA in Strategic Finance">BBA in Strategic Finance</option>
+    <option value="BBA in Entrepreneurship">BBA in Entrepreneurship</option>
+    <option value="BBA in Business Analytics">BBA in Business Analytics</option>
+    <option value="BBA in Finance &amp; Accountancy">BBA in Finance &amp; Accountancy</option>
+    <option value="BBA in Global">BBA in Global</option>
+    <option value="BBA in Travel &amp; Tourism Management">BBA in Travel &amp; Tourism Management</option>
+    <option value="B.B.M in Accounting">B.B.M in Accounting</option>
+    <option value="B.B.M in Finance">B.B.M in Finance</option>
+    <option value="B.B.M in International Business">B.B.M in International Business</option>
+    <option value="B.B.M in Management Information Systems (MIS)">B.B.M in Management Information Systems (MIS)</option>
+    <option value="B.B.M in Human Resource Management">B.B.M in Human Resource Management</option>
+    <option value="B.B.M in Personal Management or Human Resource Development">B.B.M in Personal Management or Human Resource Development</option>
+    <option value="B.B.M in Product Research and Development">B.B.M in Product Research and Development</option>
+    <option value="B.B.M in Sales and Marketing">B.B.M in Sales and Marketing</option>
+    <option value="B.Com in Accounts and Finance">B.Com in Accounts and Finance</option>
+    <option value="B.Com in Economics">B.Com in Economics</option>
+    <option value="B.Com in Investment Management">B.Com in Investment Management</option>
+    <option value="B.Com in Banking and Insurance">B.Com in Banking and Insurance</option>
+    <option value="B.Com in Financial Market">B.Com in Financial Market</option>
+    <option value="B.Com in Computer Applications">B.Com in Computer Applications</option>
+    <option value="B.Com in Statistics">B.Com in Statistics</option>
+    <option value="B.Com in Information Technology">B.Com in Information Technology</option>
+    <option value="B.Com in Tourism and Travel Management">B.Com in Tourism and Travel Management</option>
+    <option value="B.Com in International Business">B.Com in International Business</option>
+    <option value="B.Com in Banking and Finance">B.Com in Banking and Finance</option>
+    <option value="B.Com in Accountancy">B.Com in Accountancy</option>
+    <option value="B.Com in Business Economics">B.Com in Business Economics</option>
+    <option value="B.Com in E-Commerce">B.Com in E-Commerce</option>
+    <option value="B.Com in Foreign Trade Management">B.Com in Foreign Trade Management</option>
+    <option value="B.Tech in  Aeronautical Engineering">B.Tech in  Aeronautical Engineering</option>
+    <option value="B.Tech in Computer Science and Engineering">B.Tech in Computer Science and Engineering</option>
+    <option value="B.Tech in Artificial Engineering">B.Tech in Artificial Engineering</option>
+    <option value="B.Tech in Machine Learning">B.Tech in Machine Learning</option>
+    <option value="B.Tech in Data Science">B.Tech in Data Science</option>
+    <option value="B.Tech in Cloud Computing">B.Tech in Cloud Computing</option>
+    <option value="B.Tech in Mechanical Engineering">B.Tech in Mechanical Engineering</option>
+    <option value="B.Tech in Civil Engineering">B.Tech in Civil Engineering</option>
+    <option value="B.Tech in Electrical Engineering">B.Tech in Electrical Engineering</option>
+    <option value="B.Tech in Electronics and Communication Engineering">B.Tech in Electronics and Communication Engineering</option>
+    <option value="B.Sc. in Agriculture">B.Sc. in Agriculture</option>
+    <option value="B.Sc. in Animation">B.Sc. in Animation</option>
+    <option value="B.Sc. in Aviation">B.Sc. in Aviation</option>
+    <option value="B.Sc. in Biochemistry">B.Sc. in Biochemistry</option>
+    <option value="B.Sc. in Computer Science">B.Sc. in Computer Science</option>
+    <option value="B.Sc. in Electronic">B.Sc. in Electronic</option>
+    <option value="B.Sc. in Fashion Technology">B.Sc. in Fashion Technology</option>
+    <option value="B.Sc. in Food Technology">B.Sc. in Food Technology</option>
+    <option value="B.Sc. in Forensic Science">B.Sc. in Forensic Science</option>
+    <option value="B.Sc. in Forestry">B.Sc. in Forestry</option>
+    <option value="B.Sc. in Medical Technology">B.Sc. in Medical Technology</option>
+    <option value="B.Sc. in Microbiology">B.Sc. in Microbiology</option>
+    <option value="B.Sc. in Multimedia">B.Sc. in Multimedia</option>
+    <option value="B.Sc. in Nautical Science">B.Sc. in Nautical Science</option>
+    <option value="B.Sc. in Nursing">B.Sc. in Nursing</option>
+    <option value="B.Sc. in Nutrition">B.Sc. in Nutrition</option>
+    <option value="B.Sc. in Physiotherapy">B.Sc. in Physiotherapy</option>
+    <option value="B.Sc. in Psychology">B.Sc. in Psychology</option>
+    <option value="B.Sc. in Genetics">B.Sc. in Genetics</option>
+    <option value="B.Sc. in Information Technologyy">B.Sc. in Information Technologyy</option>
+    <option value="B.Sc. in Interior Design">B.Sc. in Interior Design</option>
+    <option value="B.Sc. in PCM">B.Sc. in PCM</option>
+    <option value="B.Sc. in Physics">B.Sc. in Physics</option>
+    <option value="B.Sc. in Chemistry">B.Sc. in Chemistry</option>
+    <option value="B.Sc. in Maths">B.Sc. in Maths</option>
+    <option value="B.Sc. in Zoology">B.Sc. in Zoology</option>
+    <option value="B.Sc. in Statistics">B.Sc. in Statistics</option>
+    <option value="B.Sc. in Botany">B.Sc. in Botany</option>
+    <option value="B.Sc. in Home Science">B.Sc. in Home Science</option>
+    <option value="B.C.S in AI">B.C.S in AI</option>
+    <option value="B.C.S in ML">B.C.S in ML</option>
+    <option value="B.C.S in Cognitive Science">B.C.S in Cognitive Science</option>
+    <option value="B.C.S in Computer Graphics">B.C.S in Computer Graphics</option>
+    <option value="B.C.S in Data Processing">B.C.S in Data Processing</option>
+    <option value="B.C.S in Information Technology">B.C.S in Information Technology</option>
+    <option value="B.C.S in Software Engineering">B.C.S in Software Engineering</option>
+    <option value="B.C.S in Theoretical Computer Science">B.C.S in Theoretical Computer Science</option>
+    <option value="B.C.S in Bioinformatics">B.C.S in Bioinformatics</option>
+    <option value="MA Political Science">MA Political Science</option>
+    <option value="MA History">MA History</option>
+    <option value="MA Psychology">MA Psychology</option>
+    <option value="MA Communication Studies">MA Communication Studies</option>
+    <option value="MA Philosophy">MA Philosophy</option>
+    <option value="MA Archaeology">MA Archaeology</option>
+    <option value="MA Sociology">MA Sociology</option>
+    <option value="MA Religious Studies">MA Religious Studies</option>
+    <option value="MA Geography">MA Geography</option>
+    <option value="MA Literature">MA Literature</option>
+    <option value="MA Library &amp; Information Science">MA Library &amp; Information Science</option>
+    <option value="MA Linguistics">MA Linguistics</option>
+    <option value="MA Teaching Education">MA Teaching Education</option>
+    <option value="MA International Relations">MA International Relations</option>
+    <option value="M.A.M Finance">M.A.M Finance</option>
+    <option value="M.A.M Consulting">M.A.M Consulting</option>
+    <option value="M.AM Marketing">M.AM Marketing</option>
+    <option value="MBA in General Management">MBA in General Management</option>
+    <option value="MBA in International Management">MBA in International Management</option>
+    <option value="MBA in Strategy">MBA in Strategy</option>
+    <option value="MBA in Consulting">MBA in Consulting</option>
+    <option value="MBA in Finance Leadership">MBA in Finance Leadership</option>
+    <option value="MBA in Entrepreneurship">MBA in Entrepreneurship</option>
+    <option value="MBA in Marketing">MBA in Marketing</option>
+    <option value="MBA in Operations Management">MBA in Operations Management</option>
+    <option value="M.H.R.M in Training and Development">M.H.R.M in Training and Development</option>
+    <option value="M.H.R.M in Compensation and Benefits">M.H.R.M in Compensation and Benefits</option>
+    <option value="M.H.R.M in Recruiting">M.H.R.M in Recruiting</option>
+    <option value="M.H.R.M in Organizational Leadership">M.H.R.M in Organizational Leadership</option>
+    <option value="M.H.R.M in Financial Management">M.H.R.M in Financial Management</option>
+    <option value="M.Tech in Thermal Engineering">M.Tech in Thermal Engineering</option>
+    <option value="M.Tech in Computer Integrated Manufacturing">M.Tech in Computer Integrated Manufacturing</option>
+    <option value="M.Tech in Automobile Engineering">M.Tech in Automobile Engineering</option>
+    <option value="M.Tech in Manufacturing Engineering">M.Tech in Manufacturing Engineering</option>
+    <option value="M.Tech in Material Technology">M.Tech in Material Technology</option>
+    <option value="M.Tech in Industrial Engineering">M.Tech in Industrial Engineering</option>
+    <option value="M.Tech in Product Design and Development">M.Tech in Product Design and Development</option>
+    <option value="M.Tech in Industrial Safety Engineering">M.Tech in Industrial Safety Engineering</option>
+    <option value="MCA in Management Information Systems (MIS)">MCA in Management Information Systems (MIS)</option>
+    <option value="MCA in Systems Management">MCA in Systems Management</option>
+    <option value="MCA in Systems Engineering">MCA in Systems Engineering</option>
+    <option value="MCA in Systems Development">MCA in Systems Development</option>
+    <option value="MCA in Cloud Computing">MCA in Cloud Computing</option>
+    <option value="MCA in Mobile Computing">MCA in Mobile Computing</option>
+    <option value="MCA in Networking">MCA in Networking</option>
+    <option value="MCA in Hardware Technology">MCA in Hardware Technology</option>
+    <option value="M.Com in Finance">M.Com in Finance</option>
+    <option value="M.Com in Accounting and Finance">M.Com in Accounting and Finance</option>
+    <option value="M.Com in Marketing">M.Com in Marketing</option>
+    <option value="M.Com in Computer application">M.Com in Computer application</option>
+    <option value="M.Com in Financial management">M.Com in Financial management</option>
+    <option value="M.Com in Business management">M.Com in Business management</option>
+    <option value="M.Sc in Chemistry">M.Sc in Chemistry</option>
+    <option value="M.Sc in Planetology">M.Sc in Planetology</option>
+    <option value="M.Sc in Cyber Forensic">M.Sc in Cyber Forensic</option>
+    <option value="M.Sc in Pharmacy">M.Sc in Pharmacy</option>
+    <option value="M.Sc in Data Analytics">M.Sc in Data Analytics</option>
+    <option value="M.Sc in Stem Cell Therapy">M.Sc in Stem Cell Therapy</option>
+    <option value="M.Sc in Life Science">M.Sc in Life Science</option>
+    <option value="M.Sc in Forestry">M.Sc in Forestry</option>
+    <option value="M.Sc in Systems Engineering">M.Sc in Systems Engineering</option>
+    <option value="M.Sc in Forensic Science">M.Sc in Forensic Science</option>
+    <option value="M.Sc in Paediatrics">M.Sc in Paediatrics</option>
+    <option value="M.Sc in Design Computing">M.Sc in Design Computing</option>
+    <option value="M.Sc in Oceanography">M.Sc in Oceanography</option>
+    <option value="M.Sc in Physiology">M.Sc in Physiology</option>
+    <option value="M.Sc in Biochemistry">M.Sc in Biochemistry</option>
+    <option value="M.E in Civil Engineering">M.E in Civil Engineering</option>
+    <option value="M.E in Computer Science and Engineering">M.E in Computer Science and Engineering</option>
+    <option value="M.E in Chemical Engineering">M.E in Chemical Engineering</option>
+    <option value="M.E in Electrical Engineering">M.E in Electrical Engineering</option>
+    <option value="M.E in Mechanical Engineering">M.E in Mechanical Engineering</option>
+    <option value="M.E in Electronics and Communication Engineering">M.E in Electronics and Communication Engineering</option>
+    <option value="B.E in Aeronautical Engineering">B.E in Aeronautical Engineering</option>
+    <option value="B.E in Computer Science and Engineering">B.E in Computer Science and Engineering</option>
+    <option value="B.E in Artificial Engineering">B.E in Artificial Engineering</option>
+    <option value="B.E in Machine Learning">B.E in Machine Learning</option>
+    <option value="B.E in Data Science">B.E in Data Science</option>
+    <option value="B.E in Cloud Computing">B.E in Cloud Computing</option>
+    <option value="B.E in Mechanical Engineering">B.E in Mechanical Engineering</option>
+    <option value="B.E in Civil Engineering">B.E in Civil Engineering</option>
+    <option value="B.E in Electrical Engineering">B.E in Electrical Engineering</option>
+    <option value="B.E in Electronics and Communication Engineering">B.E in Electronics and Communication Engineering</option>
+    <option value="Others">Others</option>
+    </select>
+    
+   
+    
+   
+    <script>
+    CKEDITOR.timestamp = '4.16.2.4';
+    var protocolAndHost = window.location.protocol + '//' + window.location.host;
+    
+    var editor = CKEDITOR.replace('00N0T000009dOM3UAM', {
+    removePlugins : 'elementspath,maximize,image,tabletools,liststyle,contextmenu,resize',
+    baseHref : protocolAndHost + '/ckeditor/ckeditor-4.x/rel/',
+    customConfig : '/ckeditor/ckeditor-4.x/rel/sfdc-config.js',
+    height : '425',
+    bodyId : '00N0T000009dOM3UAM_rta_body',
+    toolbar : 'SalesforceBasic',
+    sfdcLabels :{CkeLineHeight : { singleValue : 'Single', doubleValue : 'Double', title : 'Line Height', secondValue : '1.15', thirdValue : '1.5'}, CkeQuickText : { title : 'Insert quick text'}, CkeMediaEmbed : { iframeMissing : 'Invalid &lt;iframe&gt; element. Please use valid code from the approved sites.', subtitle : 'Paste &amp;lt;iframe&amp;gt; code here:', description : 'Use &lt;iframe&gt; code from an approved video source.', title : 'Embed Multimedia Content', exampleTitle : 'Example:', example : '\n            \n                &lt;iframe width=\&quot;560\&quot; height=\&quot;315\&quot; src=\&quot;https://www.youtube.com/embed/KcOm0TNvKBA\&quot; frameborder=\&quot;0\&quot; allowfullscreen&gt;&lt;/iframe&gt;\n            \n        '}, CkeImageMenu : { uploadFile : ' Browse or Upload', uploadCms : 'Salesforce CMS', pasteUrl : 'Paste Image URL', uploadUrl : 'Web Image', uploadSFFile : 'Salesforce Files', title : 'Insert images into your message'}, CkeImagePaste : { CkeImagePasteWarning : 'Pasting an image is not working properly with Firefox, please use [Copy Image location] instead.'}, CkeImageDialog : { infoTab_desc_info : 'Enter a description of the image for visually impaired users', uploadTab_desc : 'Description', defaultImageDescription : 'User-added image', uploadTab_file_info : 'Maximum size 1 MB. Only PNG, GIF or JPEG', uploadTab_desc_info : 'Enter a description of the image for visually impaired users', imageUploadLimit_info : 'Max number of upload images exceeded', btn_insert_tooltip : 'Insert Image', httpUrlWarning : 'Are you sure you want to use an http URL? Using http image URLs may result in security warnings about insecure content. To avoid these warnings, use https image URLs instead.', title : 'Insert Image', error : 'Error:', uploadTab : 'Upload Image', wrongFileTypeError : 'You can insert only .gif .jpeg and .png files.', infoTab_url : 'URL', infoTab : 'Web Address', infoTab_url_info : 'Example: http://www.mysite.com/myimage.jpg', missingUrlError : 'You must enter a URL', uploadTab_file : 'Select Image', btn_update_tooltip : 'Update Image', infoTab_desc : 'Description', btn_insert : 'Insert', btn_update : 'Update', btn_upadte : 'Update', invalidUrlError : 'You can only use http:, https:, data:, //, /, or relative URL schemes.'}, sfdcSwitchToText : { sfdcSwitchToTextAlt : 'Use plain text'}, CkeSmartLink : { title : 'Insert a Smart Link', SmartLinkContextMenuEdit : 'Edit Smart Link'}},
+    contentsCss: ['/ckeditor/ckeditor-4.x/rel/contents.css', '/sCSS/54.0/sprites/1641822910000/Theme3/default/base/CKEditor.css', '/sCSS/54.0/sprites/1641822910000/Theme3/default/base/HtmlDetailElem.css'],
+    disableNativeSpellChecker : false,
+    language : 'en-US',
+    allowIframe : false,
+    isPardotOrg : false,
+    isCmsOnly : false,
+    sharedSpaces : { top : 'cke_topSpace', bottom : ' cke_bottomSpace' }
+    ,filebrowserImageUploadUrl : '/_ui/common/request/servlet/RtaImageUploadServlet?_CONFIRMATIONTOKEN=VmpFPSxNakF5TWkwd05TMHdPRlF3TkRvME9Ub3pOQzR6T1RsYSxKVmNweHlWVFVwQ2Z3RjJsMmUyaXRVLE5HRm1NemMy'
+    ,extraPlugins : 'sfdcImage,sfdcMediaEmbed,sfdcSmartLink,sfdcCodeBlock,sfdcVfAjax4J,sfdcLineHeight,sfdcQuickText'
+    });
+    
+    editor.on('instanceReady', function( evt ) {
+        try {
+            var id = evt.editor.name;
+            CKiframe = document.getElementById('cke_' + id).querySelector('iframe');
+            meta = document.createElement('meta');
+            meta.setAttribute('name', 'referrer');
+            meta.setAttribute('content', 'no-referrer');
+            CKiframe.contentDocument.head.appendChild(meta);
+        } catch(e) {}
+    } );
+    
+    </script>
+    
+   
+   
+    <input type="submit" name="submit" class="btn btn-primary mb-2" id="sub">
+
+</div>
+</div>
+    </form>
+    
+</body>
+</html>
